@@ -4,14 +4,21 @@ import SectionTitle from "../components/sectionTitle";
 // import { benefitOne, benefitTwo } from "../components/data";
 import Video from "../components/video";
 // import Benefits from "../components/benefits";
-import Footer from "../components/footer";
-import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
-import PopupWidget from "../components/popupWidget";
+// import PopupWidget from "../components/popupWidget";
+
+export const meta = () => {
+  return [
+    {
+      title: "LinkedIn Job Tools",
+      description:
+        "Stop Scrolling, Start Appyling. Powerful tools for finding the right jobs for you on LinkedIn. Save time, and find the perfect job.",
+    },
+  ];
+};
+
 // import { Link } from "@remix-run/react";
-// import "@fontsource/cormorant-garamond/400.css";
-// import "@fontsource/titillium-web/300.css";
 
 export default function Index() {
   return (
@@ -19,37 +26,24 @@ export default function Index() {
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page">
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        pretitle="Benefits"
+        title="Sifting through job descriptions is a waste of your time"
+      >
+        LinkedIn Job Tools helps you filter down to the jobs you actually want
+        to apply for, allowing you to apply for more of the right jobs and
+        increasing your chances of landing the perfect job for you.
       </SectionTitle>
-      {/*<Benefits data={benefitOne} />*/}
-      {/*<Benefits imgPos="right" data={benefitTwo} />*/}
       <SectionTitle
-        pretitle="Watch a video"
-        title="Learn how to fullfil your needs">
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
+        pretitle="Checkout a demo"
+        title="Easily find the right jobs for you"
+      >
+        Better jobs with less time spent searching. Check it out!
       </SectionTitle>
       <Video />
-      <SectionTitle
-        pretitle="Testimonials"
-        title="Here's what our customers said">
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
-      </SectionTitle>
-      <Testimonials />
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
       </SectionTitle>
       <Faq />
       <Cta />
-      <Footer />
-      <PopupWidget />
     </>
   );
 }

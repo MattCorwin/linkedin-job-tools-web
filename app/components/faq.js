@@ -35,23 +35,13 @@ const Faq = () => {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "What is the pricing for LinkedIn Job Tools?",
+    answer: "There is a 7 day free trial, with no payment info required. After that, it is $9.99 per month.",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
-  },
-  {
-    question: "What is your refund policy? ",
-    answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
-  },
-  {
-    question: "Do you offer technical support? ",
-    answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
-  },
+    question: "How do I get started?",
+    answer: "Download the Chrome Extension, and click on the extension icon to start your free trial. You may need to refresh your LinkedIn page to see the LinkedIn Power Tools icon, which automatically appears in the LinkedIn toolbar on relevant job search pages.",
+  }
 ];
 
 export default Faq;
