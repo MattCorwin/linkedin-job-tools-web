@@ -43,8 +43,12 @@ const faqdata = [
     answer: "Download the Chrome Extension, and click on the extension icon to start your free trial. You may need to refresh your LinkedIn page to see the LinkedIn Power Tools icon, which automatically appears in the LinkedIn toolbar on relevant job search pages.",
   },
   {
-    question: "I am not seeing the icon in the LinkedIn toolbar",
+    question: "I am not seeing the icon in the LinkedIn toolbar.",
     answer: "Our icon only appears on LinkedIn pages with a job list on the left side of the page, such as https://www.linkedin.com/jobs/search/ or https://www.linkedin.com/jobs/collections/recommended/. If you are on one of those pages, try reloading the page. After starting a free trial the page will likely need to be reloaded to inject the Job Tools.",
+  },
+  {
+    question: "How do the added filters interact with the regular LinkedIn filters.",
+    answer: "The LinkedIn Job Tools filters apply after the regular LinkedIn filters are applied.",
   }
 ];
 

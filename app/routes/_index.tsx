@@ -7,6 +7,11 @@ import Video from "../components/video";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 // import PopupWidget from "../components/popupWidget";
+import PiwikPro from '@piwikpro/react-piwik-pro';
+
+if (typeof document !== "undefined") {
+  PiwikPro.initialize('074f1826-32ca-442f-b6a1-610d3abae020', 'https://falofofo.containers.piwik.pro');
+}
 
 export const meta = () => {
   return [
