@@ -1,12 +1,9 @@
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
-// import { benefitOne, benefitTwo } from "../components/data";
 import Video from "../components/video";
-// import Benefits from "../components/benefits";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
-// import PopupWidget from "../components/popupWidget";
 import PiwikPro from '@piwikpro/react-piwik-pro';
 
 if (typeof document !== "undefined") {

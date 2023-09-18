@@ -1,11 +1,8 @@
-// import Link from "next/link";
-// import ThemeChanger from "./DarkSwitch";
-// import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
 import { Link } from "@remix-run/react";
 
 const Navbar = () => {
-  const navigation = [
+  const navigation: string[] = [
     // "Product",
     // "Features",
     // "Pricing",
@@ -21,7 +18,7 @@ const Navbar = () => {
           {({ open }) => (
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
-                <Link href="/">
+                <Link to="/">
                   <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
                       {/*
@@ -68,7 +65,7 @@ const Navbar = () => {
                     {navigation.map((item, index) => (
                       <Link
                         key={index}
-                        href="/"
+                        to="/"
                         className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
                       >
                         {item}
@@ -95,7 +92,7 @@ const Navbar = () => {
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
                 <Link
-                  href="/"
+                  to="/"
                   className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
                 >
                   {menu}
@@ -114,8 +111,6 @@ const Navbar = () => {
           >
             Get Started
           </Link>
-
-          {/*<ThemeChanger />*/}
         </div>
       </nav>
     </div>
