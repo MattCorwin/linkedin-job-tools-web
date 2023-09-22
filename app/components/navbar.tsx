@@ -1,5 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { Link } from "@remix-run/react";
+import { onDownloadClick } from "~/util/onDownloadClick";
 
 const Navbar = () => {
   const navigation: string[] = [
@@ -76,6 +77,7 @@ const Navbar = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
+                      onClick={onDownloadClick}
                     >
                       Get Started
                     </Link>
@@ -108,6 +110,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
+            onClick={onDownloadClick}
           >
             Get Started
           </Link>

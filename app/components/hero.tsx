@@ -1,5 +1,7 @@
 import Container from "./container";
 import heroImg from "../images/hero.png";
+import { Link } from "@remix-run/react";
+import { onDownloadClick } from "~/util/onDownloadClick";
 
 const Hero = () => {
   return (
@@ -16,14 +18,15 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <a
-                href="https://chrome.google.com/webstore/detail/linkedin-job-tools/pnbffadghcgnggdmpefiodonaiolfjgm"
+              <Link
+                to="https://chrome.google.com/webstore/detail/linkedin-job-tools/pnbffadghcgnggdmpefiodonaiolfjgm"
                 target="_blank"
                 rel='noreferrer'
+                onClick={onDownloadClick}
                 className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md "
               >
                 Download for Free
-              </a>
+              </Link>
             </div>
           </div>
         </div>
