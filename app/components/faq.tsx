@@ -40,7 +40,7 @@ const faqdata = [
   },
   {
     question: "What is the pricing for LinkedIn Job Tools?",
-    answer: "There is a 7 day free trial, with no payment info required. After that, it is $9.99 per month.",
+    answer: "There is a 7 day free trial, with no payment info required. After that, it is $14.99 per month.",
   },
   {
     question: "How do I get started?",
