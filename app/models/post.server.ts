@@ -21,8 +21,6 @@ const posts: { [key: string]: Post } = {
     image: hero,
     imageAltText: 'text',
     markdown: `
-# Finding a Job on LinkedIn
-    
 Are you tired of scrolling through never-ending job boards and sending out countless resumes with no luck? Look no further than LinkedIn,
 the professional networking platform that can help you land your dream job. With over 700 million users, LinkedIn offers a wealth of opportunities for job seekers. In this blog post,
 we'll explore some tips and strategies to make the most out of your job search on LinkedIn.

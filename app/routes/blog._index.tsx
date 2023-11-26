@@ -1,10 +1,6 @@
 import { Link, useLoaderData } from "@remix-run/react";
 import { getPosts } from "~/models/post.server";
-import type { LinksFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
-import styles from "~css/blog.css";
-
-// export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
 export const meta = () => {
   return [
