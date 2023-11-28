@@ -12,7 +12,7 @@ const Cta = () => {
             Ready to find your next role?
           </h2>
           <p className="mt-2 font-medium text-white text-opacity-90 lg:text-xl">
-            Don&apos;t waste time filtering through the job postings.
+            Get tools to simplify your job search on LinkedIn.
           </p>
         </div>
         <div className="flex-shrink-0 w-full text-center lg:w-auto">
