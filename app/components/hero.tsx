@@ -13,8 +13,7 @@ const Hero = () => {
               Stop Scrolling, Start Applying
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Quickly filter out jobs that don't meet your qualifications, so
-              you can spend more time focusing on the right jobs for you.
+              Simplify your job application experience. Automatically tailor your cover letter to your job, and use advanced searching to find the right jobs for you.
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">

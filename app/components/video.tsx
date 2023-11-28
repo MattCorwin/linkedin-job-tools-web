@@ -1,5 +1,5 @@
 import Container from "./container";
-import demo480 from "../images/demo480.gif";
+import demo480 from "../images/full-demo-480p.gif";
 
 const Video = () => {
   return (

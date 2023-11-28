@@ -15,12 +15,10 @@ export const meta = () => {
     {
       title: "LinkedIn Job Tools",
       description:
-        "Stop Scrolling, Start Appyling. Powerful tools for finding the right jobs for you on LinkedIn. Save time, and find the perfect job.",
+        "Stop Scrolling, Start Appyling. Powerful tools for finding the right jobs for you on LinkedIn. Use AI to customize your cover letter and land your next role.",
     },
   ];
 };
-
-// import { Link } from "@remix-run/react";
 
 export default function Index() {
   return (
@@ -32,14 +30,14 @@ export default function Index() {
         title="Sifting through job descriptions is a waste of your time"
       >
         LinkedIn Job Tools helps you filter down to the jobs you actually want
-        to apply for, allowing you to apply for more of the right jobs and
-        increasing your chances of landing the perfect job for you.
+        to apply for. Then, harness the power of AI to customize your cover letter for
+        your job, and get your application in the hands of a hiring manager more quickly.
       </SectionTitle>
       <SectionTitle
         pretitle="Checkout a demo"
-        title="Easily find the right jobs for you"
+        title="No more cover letter headaches"
       >
-        Better jobs with less time spent searching. Check it out!
+        Let AI do the heavy lifting. Check it out!
       </SectionTitle>
       <Video />
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
