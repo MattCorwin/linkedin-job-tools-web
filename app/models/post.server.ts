@@ -1,6 +1,6 @@
 // import hugging from '../images/hf-logo-c.png';
 // import dynamo from '../images/dynamo.png';
-import hero from '../images/hero.png';
+import signpost from '../images/signpost2.webp';
 
 type Post = {
     slug: string;
@@ -16,9 +16,9 @@ const posts: { [key: string]: Post } = {
   'finding-a-job-on-linkedin': {
     slug: 'finding-a-job-on-linkedin',
     title: "Finding a Job on LinkedIn",
-    date: "2023-11-28",
+    date: "11-28-2023",
     summary: "Learn how to effectively use LinkedIn to find your dream job.",
-    image: hero,
+    image: signpost,
     imageAltText: 'text',
     markdown: `
 Are you tired of scrolling through never-ending job boards and sending out countless resumes with no luck? Look no further than LinkedIn,
