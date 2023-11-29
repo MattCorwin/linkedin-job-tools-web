@@ -54,7 +54,7 @@ export default function PostSlug() {
           style={{ maxWidth: '300px' }}
         />
         <Markdown>
-          <div dangerouslySetInnerHTML={{ __html: html }} />
+          <div dangerouslySetInnerHTML={{ __html: html }} id="md-container"/>
         </Markdown>
       </Container>
       <Cta />
