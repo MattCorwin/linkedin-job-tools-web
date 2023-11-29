@@ -7,10 +7,10 @@
   body {
     @apply dark:bg-trueGray-900;
   }
-  h2 {
-    @apply justify-start text-lg font-bold tracking-wider text-indigo-600 uppercase;
+  #md-container > h2 {
+    @apply justify-start text-lg font-bold tracking-wider text-indigo-600 uppercase py-5 text-justify;
   }
-  p {
-    @apply max-w-2xl py-4 text-base leading-normal text-gray-500 dark:text-gray-300;
+  #md-container > p {
+    @apply max-w-2xl py-4 text-base text-gray-500 dark:text-gray-300 text-justify leading-7;
   }
 }
