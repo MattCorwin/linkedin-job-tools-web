@@ -1,5 +1,3 @@
-// import hugging from '../images/hf-logo-c.png';
-// import dynamo from '../images/dynamo.png';
 import signpost from '../images/signpost2.webp';
 
 type Post = {
