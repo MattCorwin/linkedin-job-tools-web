@@ -36,7 +36,7 @@ const Faq = () => {
 const faqdata = [
   {
     question: "What is LinkedIn Job Tools?",
-    answer: "LinkedIn Job Tools is a chrome extension that adds extra functionality to the LinkedIn Job Search pages. You can filter out positions with specific keywords, filter to remote only roles, filter out roles you've already applied for, and more!",
+    answer: "LinkedIn Job Tools is a chrome extension that gives you tools to find a job. You can generate custom cover letters for jobs viewed on LinkedIn. You can also filter out positions with specific keywords, filter to remote only roles, filter out roles you've already applied for, and more!",
   },
   {
     question: "What is the pricing for LinkedIn Job Tools?",
