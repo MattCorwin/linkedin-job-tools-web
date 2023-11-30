@@ -12,7 +12,7 @@ const Cta = () => {
             Ready to find your next role?
           </h2>
           <p className="mt-2 font-medium text-white text-opacity-90 lg:text-xl">
-            Get tools to simplify your job search on LinkedIn.
+            Get tools to simplify your job search on LinkedIn. AI Cover Letters, Enhanced Job Filters.
           </p>
         </div>
         <div className="flex-shrink-0 w-full text-center lg:w-auto">
@@ -22,7 +22,7 @@ const Cta = () => {
             rel='noreferrer'
             onClick={onDownloadClick}
             className="inline-block py-3 mx-auto text-lg font-medium text-center text-indigo-600 bg-white rounded-md px-7 lg:px-10 lg:py-5 ">
-            Download for Free
+            Add To Chrome
           </Link>
         </div>
       </div>
