@@ -1,14 +1,6 @@
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 import Cta from "../components/cta";
-import PiwikPro from "@piwikpro/react-piwik-pro";
-
-if (typeof document !== "undefined") {
-  PiwikPro.initialize(
-    "074f1826-32ca-442f-b6a1-610d3abae020",
-    "https://falofofo.containers.piwik.pro"
-  );
-}
 
 export const meta = () => {
   return [
