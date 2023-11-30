@@ -13,4 +13,10 @@
   #md-container > p {
     @apply max-w-2xl py-4 text-base text-gray-500 dark:text-gray-300 text-justify leading-7;
   }
+  #md-container > ul {
+    @apply max-w-2xl py-4 text-base text-gray-500 dark:text-gray-300 text-justify leading-7;
+  }
+  #md-container > ul > li > a {
+    @apply text-base text-indigo-600 dark:text-gray-300 text-justify leading-7 underline;
+  }
 }
