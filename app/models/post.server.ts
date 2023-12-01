@@ -1,23 +1,24 @@
 import signpost from '../images/signpost2.webp';
+import jobFair from '../images/jobFair.webp';
 
 type Post = {
-    slug: string;
-    title: string;
-    date: string;
-    summary?: string;
-    image: any;
-    imageAltText: string;
-    markdown: string;
+  slug: string;
+  title: string;
+  date: string;
+  summary?: string;
+  image: any;
+  imageAltText: string;
+  markdown: string;
 };
 
 const posts: { [key: string]: Post } = {
   'finding-a-job-on-linkedin': {
     slug: 'finding-a-job-on-linkedin',
-    title: "Finding a Job on LinkedIn",
-    date: "11-28-2023",
-    summary: "Learn how to effectively use LinkedIn to find your dream job.",
+    title: 'Finding a Job on LinkedIn',
+    date: '11-28-2023',
+    summary: 'Learn how to effectively use LinkedIn to find your dream job.',
     image: signpost,
-    imageAltText: 'text',
+    imageAltText: 'A person in front of an open door with signposts pointing in multiple directions',
     markdown: `
 In this blog post, we'll explore some tips and strategies to make the most out of your job search on LinkedIn, and link to some helpful content.
 
@@ -70,13 +71,65 @@ a try. Our AI cover letter customizer can save you a ton of time in your job sea
 - [Our AI Cover Letter Customizer](https://chromewebstore.google.com/detail/linkedin-job-tools/pnbffadghcgnggdmpefiodonaiolfjgm)
 `.trim(),
   },
+  'writing-a-standout-linkedin-cover-letter': {
+    slug: 'writing-a-standout-linkedin-cover-letter',
+    title: 'The Art of Writing a Standout LinkedIn Cover Letter',
+    date: '12-01-23',
+    summary:
+      'A blog post providing valuable tips and best practices for job-seekers looking to craft their LinkedIn cover letters. The post discusses the importance of personalization, clarity, and alignment with the LinkedIn format to make a memorable first impression on potential employers.',
+    image: jobFair,
+    imageAltText: 'Lots of people applying for jobs at a job fair',
+    markdown: `
+## Introduction
+In the competitive job market, your LinkedIn cover letter can be the key to unlocking opportunities. While LinkedIn streamlines the job-hunting process, it also means you are competing with a multitude of candidates. That's where a standout LinkedIn cover letter comes in. This post will delve into tips and best practices for crafting a compelling cover letter tailored specifically for LinkedIn applications.
+
+## Why a LinkedIn Cover Letter Matters
+LinkedIn is a platform where professionals connect, making it a prime spot for discovering job opportunities. A targeted cover letter on LinkedIn isn't just another step in the application process—it's your chance to tell your story, showcase your achievements, and explain why you are the perfect fit for the role.
+
+## Understanding the LinkedIn Audience
+The LinkedIn audience consists of busy professionals and recruiters who may glance through hundreds of applications. Your cover letter should be succinct, relevant, and designed to capture attention quickly. It's about making an impact within the first few sentences.
+
+## Personalization is Key
+### Identify the Hiring Manager
+Go beyond 'To Whom It May Concern.' Try to find out the name of the hiring manager or the person who will be reading your cover letter. Personal touches can make a world of difference.
+### Tailor it to the Job
+Show that you've done your homework. Mention something about the company that resonates with you, and relate it back to your skills and experiences. Tailoring your cover letter to the company and position shows that you are genuinely interested. [Try our free tool](https://chromewebstore.google.com/detail/linkedin-job-tools/pnbffadghcgnggdmpefiodonaiolfjgm?pli=1) to automatically customize your cover letter for your job.
+
+## Highlight Your Unique Value Proposition
+Your cover letter should clearly outline what you bring to the table. What can you offer that others might not? This is your chance to shine and show off that unique blend of skills and experiences that make you an exceptional candidate.
+
+## Use Keywords Strategically
+Many companies use Applicant Tracking Systems (ATS) to help filter applications. Use job-related keywords found in the job description to make sure your cover letter aligns with what the recruiter is looking for. However, don't overstuff your letter with keywords – it has to read naturally.
+
+## Showcase Achievements and Competencies
+Talk about specific achievements in your career that are relevant to the job. When possible, quantify these achievements. Instead of saying 'increased sales,' say 'increased sales by 20% over six months.' Aligning competencies with the job demands demonstrates that you are competent.
+
+## Keep it Concise
+A LinkedIn cover letter should be a brief introduction, not your life story. Aim for three to four short paragraphs that can be read in less than a minute. Make sure every word counts and contributes to your overall message.
+
+## Align with LinkedIn's Culture
+LinkedIn has its own etiquette and culture. Professionalism is key, but so is human connection. Write in a professional tone, but let your personality come through as it's also about finding a cultural fit.
+
+## Call to Action
+A call to action (CTA) should be clear and direct. Invite the reader to contact you for further discussion, but also state your intention to follow up within a certain time frame. This shows initiative and keeps the ball in your court.
+
+## Proofread, Edit, and Customize
+Nothing undermines your professionalism like typos or grammatical errors. Use tools like Grammarly, or get a friend to review it. Customize each cover letter for the specific job you're applying for – no generic letters.
+
+## Conclusion
+With the right approach, your LinkedIn cover letter can be the crisp, engaging introduction that sets you apart from the crowd. Remember to personalize, remain relevant, and showcase your most impressive achievements. Finally, a well-crafted cover letter is a reflection of your professionalism, so take the time to get it right. Good luck, and happy job hunting!
+
+## Bonus Tip – Engage with the Platform
+Engagement on LinkedIn prior to your application can set a positive precedent. Comment on company posts, share industry-related content, and build a network. It shows that you are proactive and already part of the professional community. When your application lands, you might just be a familiar face.
+
+Remember, your LinkedIn cover letter is more than just your ticket to an interview – it's a personal branding tool. Use it wisely.`.trim(),
+  },
 };
 
 export function getPosts(): Array<Post> {
-    return Object.values(posts);
+  return Object.values(posts);
 }
 
 export function getPost(slug: string): Post {
-    return posts[`${slug}`];
+  return posts[`${slug}`];
 }
-

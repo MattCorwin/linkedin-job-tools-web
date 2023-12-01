@@ -39,6 +39,10 @@ const faqdata = [
     answer: "LinkedIn Job Tools is a chrome extension that gives you tools to find a job. You can generate custom cover letters for jobs viewed on LinkedIn. You can also filter out positions with specific keywords, filter to remote only roles, filter out roles you've already applied for, and more!",
   },
   {
+    question: 'Why does Google say: "This extension is not trusted by Enhanced Safe Browsing"?',
+    answer: "Google applies this warning to all new extensions. Our application is safe and secure, but since it was recently developed Google has applied this warning which should disappear soon.",
+  },
+  {
     question: "What is the pricing for LinkedIn Job Tools?",
     answer: "There is a 7 day free trial, with no payment info required. After that, it is $14.99 per month. Free trials include 20 cover letter customizations, and paid users can generate 50 cover letters per month.",
   },
