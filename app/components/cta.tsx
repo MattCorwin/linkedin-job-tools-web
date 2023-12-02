@@ -17,7 +17,7 @@ const Cta = () => {
         </div>
         <div className="flex-shrink-0 w-full text-center lg:w-auto">
           <Link
-            to="https://chrome.google.com/webstore/detail/linkedin-job-tools/pnbffadghcgnggdmpefiodonaiolfjgm"
+            to="https://chromewebstore.google.com/detail/linkedin-job-tools/pnbffadghcgnggdmpefiodonaiolfjgm"
             target="_blank"
             rel='noreferrer'
             onClick={onDownloadClick}

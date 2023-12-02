@@ -79,13 +79,19 @@ const Navbar = () => {
                       Blog
                     </Link>
                     <Link
-                      to="https://chrome.google.com/webstore/detail/linkedin-job-tools/pnbffadghcgnggdmpefiodonaiolfjgm"
+                      to={'/getting-started'}
+                      className="w-full px-4 py-2 text-center text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
+                    >
+                      Getting Started
+                    </Link>
+                    <Link
+                      to="https://chromewebstore.google.com/detail/linkedin-job-tools/pnbffadghcgnggdmpefiodonaiolfjgm"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
                       onClick={onDownloadClick}
                     >
-                      Get Started
+                      Add To Chrome
                     </Link>
                   </>
                 </Disclosure.Panel>
@@ -118,13 +124,19 @@ const Navbar = () => {
             Blog
           </Link>
           <Link
-            to="https://chrome.google.com/webstore/detail/linkedin-job-tools/pnbffadghcgnggdmpefiodonaiolfjgm"
+            to={`/getting-started`}
+            className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+          >
+            Getting Started
+          </Link>
+          <Link
+            to="https://chromewebstore.google.com/detail/linkedin-job-tools/pnbffadghcgnggdmpefiodonaiolfjgm"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
             onClick={onDownloadClick}
           >
-            Get Started
+            Add To Chrome
           </Link>
         </div>
       </nav>
