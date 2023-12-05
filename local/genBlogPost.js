@@ -1,5 +1,5 @@
-const OpenAI = require("openai");
-const fs = require("fs");
+const OpenAI = require('openai');
+const fs = require('fs');
 require('dotenv').config();
 
 const openai = new OpenAI({
@@ -8,42 +8,44 @@ const openai = new OpenAI({
 
 // TODO add accompanying image generation
 // const image = await openai.images.generate({ model: "dall-e-3", prompt: "A cute baby sea otter" });
+const imageOnly = true;
 
 const num = '1';
-const topic = `"How to Customize Your Cover Letter for Different Jobs on LinkedIn"
-Discuss the importance of tailoring cover letters to specific job postings and offer advice on how to do it effectively.`;
+const topic = `"Unlocking LinkedIn's Job Search Features: A Step-by-Step Guide"
+Explain how to effectively use LinkedIn's job search features to find the right job opportunities and connect with potential employers.`;
 const imagePrompt = `Generate a main image for a blog post on the topic ${topic}. Do not include any text in the image.`;
 async function main() {
-  const chatCompletion = await openai.chat.completions.create({
-    messages: [
-      {
-        role: "user",
-        content:
-          `Write an 800 word blog post on ${topic}.
-          Format the response as a JSON object with the following format and content:
-          {
-            title: Blog Post Title,
-            slug: the title property converted to a URL slug ie. all lowercase words separated by dashes,
-            date: The current date,
-            summary: A short summary of the blog post,
-            image: an empty string,
-            imageAltText: an empty string,
-            markdown: A string containing the markdown representation of the blog post
-          }
-          Do not add any preceding text, the response should be valid, parseable JSON. Use <br> instead of \n for newline characters.`,
-      },
-    ],
-    model: "gpt-4-1106-preview",
-  });
+  if (!imageOnly) {
+    const chatCompletion = await openai.chat.completions.create({
+      messages: [
+        {
+          role: 'user',
+          content: `Write an 800 word blog post on ${topic}.
+            Format the response as a JSON object with the following format and content:
+            {
+              title: Blog Post Title,
+              slug: the title property converted to a URL slug ie. all lowercase words separated by dashes,
+              date: The current date,
+              summary: A short summary of the blog post,
+              image: an empty string,
+              imageAltText: an empty string,
+              markdown: A string containing the markdown representation of the blog post
+            }
+            Do not add any preceding text, the response should be valid, parseable JSON. Use <br> instead of \n for newline characters.`,
+        },
+      ],
+      model: 'gpt-4-1106-preview',
+    });
 
-  console.log(chatCompletion.choices);
-  fs.writeFileSync(
-    `${__dirname}/completion-${num}.json`,
-    chatCompletion.choices[0].message.content,
-    {
-      flag: "w",
-    }
-  );
+    console.log(chatCompletion.choices);
+    fs.writeFileSync(
+      `${__dirname}/completion-${num}.json`,
+      chatCompletion.choices[0].message.content,
+      {
+        flag: 'w',
+      }
+    );
+  }
   for (let num = 1; num < 3; num++) {
     await genImage(openai, imagePrompt, num.toString());
   }
@@ -58,27 +60,15 @@ const genImage = async (openai, prompt, count) => {
   });
   response.data.forEach((item) => {
     const buffer = Buffer.from(item.b64_json, 'base64');
-    fs.writeFileSync(
-      `${__dirname}/image-${count}.webp`,
-      buffer,
-      {
-        flag: 'w',
-      }
-    );
+    fs.writeFileSync(`${__dirname}/image-${count}.webp`, buffer, {
+      flag: 'w',
+    });
   });
-}
+};
 
 main();
 
 /*
-"The Art of Writing a Standout LinkedIn Cover Letter"
-Provide tips and best practices for crafting a compelling cover letter specifically tailored for LinkedIn job applications.
-
-"Unlocking LinkedIn's Job Search Features: A Step-by-Step Guide"
-Explain how to effectively use LinkedIn's job search features to find the right job opportunities and connect with potential employers.
-
-"How to Customize Your Cover Letter for Different Jobs on LinkedIn"
-Discuss the importance of tailoring cover letters to specific job postings and offer advice on how to do it effectively.
 
 "The Do's and Don'ts of Networking on LinkedIn for Job Seekers"
 Share strategies for building and maintaining a strong professional network on LinkedIn to enhance your job search.

@@ -1,6 +1,7 @@
 import signpost from '../images/signpost2.webp';
 import jobFair from '../images/jobFair.webp';
 import coverLetterEdit from '../images/coverLetterEdit.webp';
+import unlock from '../images/unlock.webp';
 
 type Post = {
   slug: string;
@@ -174,6 +175,49 @@ Carefully proofread your letter to ensure there are no spelling or grammatical e
 Customizing your cover letter for each job application may seem time-consuming, but it can be the difference between getting an interview and being overlooked. Tailor your cover letter for the specific position and company, showing genuine interest and making a case for why you're the best candidate. Using these tips when applying for jobs on LinkedIn will set your application apart and help you land the job of your dreams.
 Remember, the cover letter is your chance to make a memorable first impression. Make it count by customizing it for each unique job opportunity that comes your way on LinkedIn.`.trim(),
   },
+  "unlocking-linkedins-job-search-features-a-step-by-step-guide": {
+    title: "Unlocking LinkedIn's Job Search Features: A Step-by-Step Guide",
+    slug: "unlocking-linkedins-job-search-features-a-step-by-step-guide",
+    date: "12-5-2023",
+    summary: "Discover how to maximize your job search on LinkedIn with this comprehensive guide. Learn to leverage LinkedIn's tools and features to find the ideal job opportunities and make meaningful connections with employers.",
+    image: unlock,
+    imageAltText: "A lock and key with LinkedIn text",
+    markdown:
+`In the contemporary job market, LinkedIn has emerged as a powerhouse for career development and job searches. Whether you're a fresh graduate or a seasoned professional, understanding how to navigate and utilize LinkedIn’s job search features can significantly increase your chances of landing the perfect role. Here’s your step-by-step guide to mastering LinkedIn’s job search capabilities.
+
+**Step 1: Perfect Your LinkedIn Profile**
+Your LinkedIn profile is your online resume and the first point of contact with potential employers, so it should be polished and professional. Ensure that your profile picture is a clear, friendly headshot, your headline accurately reflects your current position or career aspirations, and your summary tells your career story compellingly. Highlight your skills, experiences, and accomplishments in detail in the experience section.
+
+**Step 2: Use LinkedIn's Job Search Functionality**
+LinkedIn has a dedicated 'Jobs' section which you can access from the navigation bar. Once there, you can search for jobs using keywords, company names, or locations. You can filter results by date posted, job function, industry, and more. LinkedIn also provides job recommendations based on your profile and past searches.
+[Try our tool](https://chromewebstore.google.com/detail/linkedin-job-tools/pnbffadghcgnggdmpefiodonaiolfjgm) that adds extra filter and search options to the LinkedIn job search, like a Max Applicants filter to find recently posted jobs.
+
+**Step 3: Set Up Job Alerts**
+You can set job alerts for specific roles or companies you are interested in. LinkedIn will then notify you via email or notifications when new jobs that fit your criteria are posted. This is a great way to stay on top of new opportunities without constantly checking the platform.
+
+**Step 4: Research Companies and Follow Their Pages**
+When you find companies you're interested in working for, follow their LinkedIn pages. This will keep you updated on company news and new job openings. It's also a good idea to research the company culture and values to tailor your application accordingly.
+
+**Step 5: Apply Directly Through LinkedIn**
+For many listings, you can apply directly through LinkedIn, often with the 'Easy Apply' feature which only requires a few clicks. Always tailor your resume and cover letter for each application and leverage your LinkedIn profile as an extension of your application materials.
+
+**Step 6: Use Your Network to Your Advantage**
+Networking is a powerful tool on LinkedIn. Connect with current and former colleagues, join industry groups, and participate in discussions. You can often reach out to company insiders who can provide valuable insights or even refer you for a position. A referral can make a significant difference in getting your application noticed.
+
+**Step 7: Leverage LinkedIn Learning**
+LinkedIn Learning offers a variety of courses that can help you boost your skills and make you a more attractive candidate. Some employers look favorably upon candidates who are proactive about professional development.
+
+**Step 8: Prepare for Interviews**
+LinkedIn is also a great research tool for interview preparation. Use the platform to learn more about your interviewers, the company, and the industry. This will help you to ask informed questions and show that you are truly interested in the role.
+
+**Step 9: Engage With Content and Post Thoughtfully**
+Posting relevant articles, commenting on posts, and engaging with content in your field can raise your profile and show potential employers that you’re knowledgeable and active in your industry. Thought leadership can distinguish you from other candidates.
+
+**Step 10: Be Persistent and Patient**
+Finally, remember that finding the right job can take time. Keep refining your approach based on the responses you get and don't be disheartened by rejections. Persistence and a positive attitude often pay off.
+
+By following these steps, you can thoroughly explore LinkedIn's job search features and put yourself in a strong position to capitalize on job opportunities. With the right strategy and mindset, LinkedIn can be your gateway to a fulfilling career path. Good luck!`.trim()
+  }
 };
 
 export function getPosts(): Array<Post> {
